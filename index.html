@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Lugar Seguro da Gaby</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">🌙</span>
+      <span>Gaby Safe Place</span>
+    </div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#corpo">Corpo</a>
+      <a href="#chat">Chat</a>
+      <a href="#jogos">Jogos</a>
+      <a href="#cartas">Cartas</a>
+      <a href="#final">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">feito com carinho por Rafihx</p>
+        <h1>Um lugar seguro para quando a semana pesar.</h1>
+        <p class="hero-text">
+          Gaby, esse site é um cantinho para você abrir quando o cansaço apertar,
+          quando as dores ficarem fortes, quando a cabeça não calar ou quando você só precisar lembrar
+          que continua sendo amada, admirada e importante.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#corpo">Entrar no cuidado</a>
+          <a class="btn ghost" href="#chat">Abrir conversa</a>
+        </div>
+      </div>
+      <div class="hero-card reveal delay-1">
+        <div class="heart-pulse">❤️</div>
+        <h3>Mensagem secreta do começo</h3>
+        <p>
+          Você não precisa vencer a semana inteira hoje. Um passo pequeno também é coragem.
+        </p>
+      </div>
+    </section>
+
+    <section class="section intro-grid">
+      <article class="glass reveal">
+        <span>🫂</span>
+        <h2>Objetivo</h2>
+        <p>Acolher o que ela sente com jogos leves, mensagens escondidas e frases que parecem um abraço.</p>
+      </article>
+      <article class="glass reveal delay-1">
+        <span>🫀</span>
+        <h2>Corpo interativo</h2>
+        <p>Ela clica nas partes do corpo e recebe mensagens sobre dor, ansiedade, peito pesado, cabeça cheia e descanso.</p>
+      </article>
+      <article class="glass reveal delay-2">
+        <span>💬</span>
+        <h2>Chat</h2>
+        <p>Uma conversa inspirada em WhatsApp, com Gaby falando sobre dores e Rafihx respondendo com carinho.</p>
+      </article>
+    </section>
+
+    <section id="corpo" class="section body-section">
+      <div class="section-title reveal">
+        <p class="eyebrow">parte interativa</p>
+        <h2>Mapa de carinho do corpo</h2>
+        <p>Clique em uma região para revelar uma mensagem acolhedora.</p>
+      </div>
+
+      <div class="body-wrap reveal">
+        <div class="body-map" aria-label="Corpo interativo da Gaby">
+          <button class="body-point head" data-part="Cabeça" data-message="Gaby, quando sua cabeça estiver cheia demais, lembra: você não precisa responder todos os pensamentos. Respira devagar. Você está segura agora.">🧠</button>
+          <button class="body-point eyes" data-part="Olhos" data-message="Esses olhos já viram dias difíceis, mas também merecem ver dias leves. Não se cobre por chorar; até a alma precisa transbordar às vezes.">👀</button>
+          <button class="body-point chest" data-part="Peito" data-message="Se o peito pesar, coloca a mão nele e respira comigo. A dor pode ser grande, mas ela não é maior que você.">🫁</button>
+          <button class="body-point heart" data-part="Coração" data-message="Seu coração não é fraco por sentir tanto. Ele é bonito porque ainda consegue amar, mesmo depois de semanas difíceis.">❤️</button>
+          <button class="body-point hands" data-part="Mãos" data-message="Essas mãos fazem muito, trabalham muito e carregam muito. Hoje elas também merecem descanso e cuidado.">🤲</button>
+          <button class="body-point stomach" data-part="Barriga" data-message="Quando a ansiedade apertar por dentro, tenta lembrar que seu corpo está pedindo calma, não cobrança. Um gole de água, uma pausa, um respiro.">🌧️</button>
+          <button class="body-point legs" data-part="Pernas" data-message="Mesmo cansadas, suas pernas continuam te levando. Obrigado por continuar tentando, mesmo quando tudo parece pesado.">🦵</button>
+          <div class="silhouette"></div>
+        </div>
+
+        <div class="body-message glass">
+          <h3 id="bodyTitle">Escolha uma parte</h3>
+          <p id="bodyText">Quando você clicar em algum ponto, uma mensagem aparece aqui.</p>
+          <div class="progress-line"><span id="bodyProgress"></span></div>
+          <small id="bodyCount">0 partes descobertas</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="chat" class="section chat-section">
+      <div class="section-title reveal">
+        <p class="eyebrow">conversa acolhedora</p>
+        <h2>Chat da Gaby e Rafihx</h2>
+        <p>Toque em responder para continuar a conversa.</p>
+      </div>
+
+      <div class="phone reveal">
+        <div class="phone-header">
+          <div class="avatar">G</div>
+          <div>
+            <strong>Gaby</strong>
+            <span>online no lugar seguro</span>
+          </div>
+        </div>
+        <div id="chatBox" class="chat-box"></div>
+        <div class="quick-replies">
+          <button data-reply="carinho">Responder com carinho</button>
+          <button data-reply="dor">Responder sobre as dores</button>
+          <button data-reply="forca">Lembrar da força dela</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="jogos" class="section games-section">
+      <div class="section-title reveal">
+        <p class="eyebrow">mini jogos</p>
+        <h2>Jogos para aliviar a semana</h2>
+        <p>Cada jogo libera mensagens novas.</p>
+      </div>
+
+      <div class="games-grid">
+        <article class="game-card reveal">
+          <h3>🎡 Roleta do Carinho</h3>
+          <p>Gire até 10 vezes e descubra mensagens secretas.</p>
+          <div class="wheel" id="wheel">💙</div>
+          <button class="btn primary" id="spinBtn">Girar roleta</button>
+          <p class="game-output" id="wheelOutput">Você ainda não girou.</p>
+          <small id="spinCount">10 giros restantes</small>
+        </article>
+
+        <article class="game-card reveal delay-1">
+          <h3>🌱 Jardim da Semana</h3>
+          <p>Clique nas flores para fazer carinho virar coragem.</p>
+          <div class="garden" id="garden"></div>
+          <p class="game-output" id="gardenOutput">Cada flor guarda uma frase.</p>
+        </article>
+
+        <article class="game-card reveal delay-2">
+          <h3>🧩 Decisões do Dia</h3>
+          <p>Escolha como está se sentindo hoje.</p>
+          <div class="choices">
+            <button data-choice="cansada">Estou cansada</button>
+            <button data-choice="ansiosa">Minha ansiedade atacou</button>
+            <button data-choice="dor">Estou com dor</button>
+            <button data-choice="melhor">Estou um pouco melhor</button>
+          </div>
+          <p class="game-output" id="choiceOutput">Escolha uma opção para receber uma mensagem.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cartas" class="section letters-section">
+      <div class="section-title reveal">
+        <p class="eyebrow">mensagens escondidas</p>
+        <h2>Cartas para cada dia</h2>
+        <p>Abra uma carta por vez.</p>
+      </div>
+      <div class="letters-grid reveal" id="lettersGrid"></div>
+    </section>
+
+    <section class="section stars-section">
+      <div class="section-title reveal">
+        <p class="eyebrow">céu secreto</p>
+        <h2>Céu das mensagens</h2>
+        <p>Clique nas estrelas e encontre frases escondidas.</p>
+      </div>
+      <div class="sky reveal" id="sky"></div>
+      <p class="star-output glass" id="starOutput">Uma estrela pode guardar exatamente o que ela precisa ler.</p>
+    </section>
+
+    <section id="final" class="section final-section">
+      <div class="final-card reveal">
+        <p class="eyebrow">final especial</p>
+        <h2>Gaby, esse lugar é seu.</h2>
+        <p>
+          Eu sei que existem dores que eu não consigo tirar com as mãos. Sei que tem dias em que o peito pesa,
+          a cabeça não para, o corpo fica exausto e a semana parece carregar tudo de uma vez.
+        </p>
+        <p>
+          Mas eu quero que você lembre: você não é difícil de amar. Você não é um peso. Você não é só as dores que sente.
+          Você é uma pessoa incrível, forte, sensível, importante e muito amada.
+        </p>
+        <p>
+          Um dia eu quero cuidar de todas as suas dores da forma mais bonita que eu conseguir. Enquanto esse dia não chega,
+          deixei aqui esse cantinho para te lembrar que o Rafihx se importa com você de verdade. ❤️
+        </p>
+        <button class="btn primary" id="secretBtn">Revelar última mensagem</button>
+        <div class="secret-final" id="secretFinal"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
